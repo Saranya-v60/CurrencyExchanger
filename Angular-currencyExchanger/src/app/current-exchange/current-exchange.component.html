@@ -1,0 +1,9 @@
+<div class="cards" *ngIf="currency$ | async as currency">
+  <div class="card" *ngFor="let item of cardsList">
+    <h1>
+      {{ currency.query.from }} <i class="fa-solid fa-right-left"></i>
+      {{ currency.query.to }}
+    </h1>
+    <p>{{ currency.result }}</p>
+  </div>
+</div>
