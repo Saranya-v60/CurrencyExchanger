@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   template: `<div class="card">
     <app-time-history-chart></app-time-history-chart>
   </div>`,
-  imports: [CommonModule, TimeHistoryChartComponent],
+  imports: [TimeHistoryChartComponent],
 })
 export class CurrencyDetailsComponent {
   #communicationService = inject(CommunicationService);
